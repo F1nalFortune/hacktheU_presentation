@@ -2,6 +2,11 @@ var obj = Object.new()
 
 var person={name:'Brian', height:'6'1'}
 
-	person.name  //Bring back the name property of the 'person' object
-  person.hobby = 'Snowboarding'
-  person.occupation = 'Programmer'
+//Accessing Object Properties
+	person.name
+	person['name']
+
+//Adjusting Object Properties
+	person.name = 'Brian'
+  	person.hobby = 'Snowboarding'
+  	person.occupation = 'Programmer'

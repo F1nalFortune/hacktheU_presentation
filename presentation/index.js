@@ -81,11 +81,10 @@ export default class Presentation extends React.Component {
             </Heading>
             <Text lineHeight={2} textColor="white">
                 <Layout>var name = "Brian"</Layout>
-                var tells JS to set data aside
-                name is the name of the variable
-                in this case it's Brian
-                console.log(name) => "Brian"
-                convention is camelCase
+                var tells JS to set data aside.
+                'name' is the name of the variable.<br />
+                console.log(name)<br />=> "Brian"<br />
+                convention for variable names in JavaScript is camelCase<br />
                 var firstName = "Brian"
                 var lastName = "Phelps"
             </Text>
@@ -95,10 +94,11 @@ export default class Presentation extends React.Component {
                 VARIABLE NAMING RULES
             </Heading>
             <List textColor="white">
-                <ListItem>No spaces</ListItem>
-                <ListItem>Can't start with digits</ListItem>
+                <ListItem>No spaces (var first Name)</ListItem>
+                <ListItem>Can't start with digits ( var 1stbase )</ListItem>
                 <ListItem>underscores are permitted, not convention</ListItem>
-                <ListItem>camelCase is first word lowercase and rest capitalized</ListItem>
+                <ListItem>camelCase - first word is lowercase and rest capitalized</ListItem>
+                <ListItem>eg) var firstAndLastName</ListItem>
             </List>
           </Slide>
           <Slide>
@@ -146,6 +146,7 @@ export default class Presentation extends React.Component {
               <ListItem>Math.min(1, 4, 9)</ListItem>
               <ListItem>Math.max(11, 9, 21)</ListItem>
               <ListItem>Math.round(8.3)</ListItem>
+              <ListItem>parseInt("10")</ListItem>
               <ListItem>Math.Pi</ListItem>
             </List>
           </Slide>
@@ -166,6 +167,12 @@ export default class Presentation extends React.Component {
               JavaScript Objects
             </Heading>
             <CodePane lang="jsx" source={require("raw!../assets/objExm.example")} />
+          </Slide>
+          <Slide>
+            <Heading size={1} Fit cap lineHeight={1.5} textColor="secondary">
+              JavaScript Alerts
+            </Heading>
+            <CodePane lang="jsx" source={require("raw!../assets/alertExm.example")} />
           </Slide>
           <Slide transition={["spin", "fade"]} bgColor="primary">
             <Heading size={1} Fill Fit lineHeight={1} textColor="secondary">
